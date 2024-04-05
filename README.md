@@ -5,7 +5,7 @@ Robo Race bot created by students of RoboTech Club at National Institute of Scie
 # Time Line
 
 - Start of Project - 4 January 2024
-- Participation in NIRMAN 3rd Edition in Silicon Institute of Technology, Bhubaneswar - 19 February 2024
+- Participation in NIRMAN 3rd Edition in Silicon Institute of Technology, Bhubaneswar - 14 February 2024
 
 # Problem Statement
 
@@ -53,7 +53,7 @@ Use zipties to tie the motors and apply glue gun to make it stable. And all the 
 |                                        | IN1 to Pin 4                  |                      | Right Motor Negative in OUT3| Positive of Arduino to Common Positive        |
 |                                        | IN2 to Pin 6                  |                      | Right Motor Positive in OUT4| Positive of Receiver to Common Positive       |
 |                                        | ENB to Pin 9                  |                      |                             | Negative of Arduino to Common Negative        |
-|                                        | IN3 to Pin 8                  |                      |                             | Negative of Receiver to Common Negative       |                         
+|                                        | IN3 to Pin 8                  |                      |                             | Negative of Receiver to Common Negative       |
 |                                        | IN4 to Pin 10                 |                      |                             | Negative of Motor Driver to Common Negative   |
 
 # Transmitter and Receiver Setup
