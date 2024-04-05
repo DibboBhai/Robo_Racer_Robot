@@ -141,4 +141,4 @@ The project was mostly successful. In this project we learn how the receiver and
 - Arya Niyogi - Body Designing work for project
 - Dadhichi Das - Coding work for project
 
-  # Jai Maa Kali
+  # Joy Maa Kali
