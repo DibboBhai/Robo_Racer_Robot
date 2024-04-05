@@ -123,13 +123,13 @@ There are many inprovements to be done in the bot
 - Using good equipments for building bot.
 - Reduction of weight
 - Writing a polynomial function of mapping so that we have more control on the bot and can switch back to linear according to need
-- More power from battery
+- More power from battery for more speed
 
 # Conclusion
 
 The project was mostly successful. In this project we learn how the receiver and transmitter works and how wireless transmission of Radiowaves occur. And we learnt about functions like mapping and pulseIn. This project overall teaches us of basic wireless transmission of signals and this ignites our mind to do more projects on transmitter and receiver.
 
-# Members0
+# Members
 
 - Dr. Subhankar Mishra (Faculty incharge of RoboTech Club) - Guidance for the Project
 - Girija Shankar Ray (President of Robotech Club) - Mentor of Whole Project, Bug Fixing
