@@ -117,6 +117,28 @@ After testing the bot will be able to do all the motions easily. But one has to 
 - The Motor directions were not correct and motors were not firm in their position
 - The bot had difficulty in climbing slopes
 
+# Future Improvements
+
+There are many inprovements to be done in the bot
+- Using good equipments for building bot.
+- Reduction of weight
+- Writing a polynomial function of mapping so that we have more control on the bot and can switch back to linear according to need
+- More power from battery
+
 # Conclusion
 
-The project was mostly successful. In this project we learn how the receiver and transmitter works and how wireless transmission of Radiowaves occur. And we learnt about functions like mapping and pulseIn
+The project was mostly successful. In this project we learn how the receiver and transmitter works and how wireless transmission of Radiowaves occur. And we learnt about functions like mapping and pulseIn. This project overall teaches us of basic wireless transmission of signals and this ignites our mind to do more projects on transmitter and receiver.
+
+# Members0
+
+- Dr. Subhankar Mishra (Faculty incharge of RoboTech Club) - Guidance for the Project
+- Girija Shankar Ray (President of Robotech Club) - Mentor of Whole Project, Bug Fixing
+- Sanat Kumar Behera (senior) - Mentor of Mechanical
+- Karan Kumar Sahoo (senior) - Mentor of Coding
+- Rikan Mahakur (Captain) - Mechanical work for project
+- Bratanu Saha - Calibration work for project
+- Mayukh Ghosh - Wiring and ciruciting work for project
+- Arya Niyogi - Body Designing work for project
+- Dadhichi Das - Coding work for project
+
+  # Jai Maa Kali
