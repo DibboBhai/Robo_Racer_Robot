@@ -58,6 +58,8 @@ In this project we are using Flysky FS-CT6B Transmitter. It is device used by Dr
 
 In our case we will use only 2 channels. One channels will help in controling the forward left and forward right wheel and other channel will help in controlling the forward right and backward wheel.
 
+By experimentation we received the data that the input values of the transmitter varies between 1800 at maximum and 1200 at minimum.
+
 - Left wheels (both backward and forward) control ---> channel 2
 - Right wheels (both backward and forward) control ---> channel 3
 
@@ -74,15 +76,28 @@ Whenever the driver wants to make a motion he can change the direction of wheels
 | IN3 voltage LOW   | IN3 voltage HIGH   | IN3 voltage LOW                           | IN3 voltage HIGH OR LOW (SAME AS IN4) |
 | IN4 voltage HIGH  | IN4 voltage LOW    | IN4 voltage HIGH                          | IN4 voltage HIGH OR LOW (SAME AS IN3) |
 
-Apart for controling we observe the magnitude of how much the joystick by mapping is given the arduino instruct the motor driver to how much power is to be give.
+Apart for controling we observe the magnitude of how much the joystick by mapping is given the arduino instruct the motor driver to how much power is to be give. Or in simple terms it controls the speed of the bot.
 
 # Programming
 
 **<ins>Initializing of Variables and Naming Pins</ins>**
 
-- At the starting we define different variables for pins and for dyanamic input vlaues
-- ch2 and ch3 are for channel 2 and channel 3 repsectively
-- a,b,c, and d are for IN1, IN2, IN3 and IN4 pins respectively
+- At the starting we define different variables for pins and for dyanamic input values.
+- ch2 and ch3 are for channel 2 and channel 3 repsectively.
+- enA (5 pin) and enB(9 pin) are connected to ENA and ENB pins of motor driver repectively.
+- a,b,c, and d are for IN1, IN2, IN3 and IN4 pins respectively.
+- But while initilizing we do it separate for the left motor and separate for the right motor.
 
-  **<ins>Setup</ins>**
-  - In the setup we start with 
+**<ins>Setup</ins>**
+ - In the setup we start with telling which pins will give input and which will give input according to left and right motor.
+ - Pin 2 and 3 are taking inputs and pin 2 is connected to channel 3 and pin 3 is connected to channel 2.
+ - enA and enB are giving outputs to the ENA and ENB respectively for the magnitude of the voltage to be supplied.
+ - a,b,c and d are respectively giving OUTPUT to IN1,IN2,IN3 and IN4.
+
+**<ins>Loop</ins>**
+- Inside the loop first we map the input given by transmitter which is 1800 to 1200 to -254 to 254 so that we can give analog output.
+- We used negative for negative pull of the joystick and positive for positive pull of joystick so that we can control the direction of the bot and can control at ease.
+- After that boundary conditions are defined because in experimental observation we observed that the input values varies due to technical and mechanical errors constantly varyind due to dynamic environment.
+- So to counter the above problem we defined set of boundary condition such that if the value is above 254 then the value of channel's input is 254 only and if it is less than -254 then the input in channel is -254 only.
+- After this we setup the conditions for motions of directions like FORWARD,BACKWARD,RIGHT,LEFT and STABLE(Beacuse at experimentation we observed that the bot was not stable at that so we specified the condition at else statment).
+- At the very end we use Analog Write and absolute value of the ch2 and ch3 variables for controlling of the bot's speed which.
