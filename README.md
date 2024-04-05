@@ -40,5 +40,14 @@ The 2D design is created in Onshape and then we used Laser cutter to get precise
 
 [The Link for the 2D design](https://cad.onshape.com/documents/d5d891ddd6445b480410c69e/w/940477b93a4f2d0b305ebcb4/e/ea15fd9b8ccd93f9f53267da)
 
+# Electrical Connections
 
-
+| Battery and Motor Driver               | Motor Driver and Arduino      | Receiver and Arduino | Motor Driver and Motors     | Breadboard to rest of circuit                 |
+| -------------------------------------- | ----------------------------- | -------------------- | --------------------------- | --------------------------------------------- |
+|12V Positive of battery connected to 12V|5V common connected to Arduino | Channel 2 in Pin 3   | Left Motor Positive in OUT1 | 5V Positive of Motor Driver to Common Positive|
+|                                        | ENA to Pin 5                  | Channel 3 in Pin 2   | Left Motor Negative in OUT2 | Ground of Battery to Common Ground            |
+|                                        | IN1 to Pin 4                  |                      | Right Motor Negative in OUT3| Positive of Arduino to Common Positive        |
+|                                        | IN2 to Pin 6                  |                      | Right Motor Positive in OUT4| Positive of Receiver to Common Positive       |
+|                                        | ENB to Pin 9                  |                      |                             | Negative of Arduino to Common Negative        |
+|                                        | IN3 to Pin 8                  |                      |                             | Negative of Receiver to Common Negative       |                         
+|                                        | IN4 to Pin 10                 |                      |                             | Negative of Motor Driver to Common Negative   |
