@@ -51,3 +51,9 @@ The 2D design is created in Onshape and then we used Laser cutter to get precise
 |                                        | ENB to Pin 9                  |                      |                             | Negative of Arduino to Common Negative        |
 |                                        | IN3 to Pin 8                  |                      |                             | Negative of Receiver to Common Negative       |                         
 |                                        | IN4 to Pin 10                 |                      |                             | Negative of Motor Driver to Common Negative   |
+
+# Transmitter and Receiver Setup
+
+In this project we are using Flysky FS-CT6B Transmitter. It is device used by Driver to control the Bot wirelessly. Transmitter takes input from user about what task to perform accordin to what the user has set up and the receiver recives the input given by user by Radiowaves sent by the transmitter. Then receiver decodes the waves and send the input values to the microprocessor then it takes decision of what output must be given according to te way it has been programmed. Every channels of receiver has a specific botton or joystick which it is connected to and every bottons and joystic independently send their signals. So  every channel receives different input. And with different inputs we can do multitasking and make the bot work.
+
+
