@@ -76,4 +76,13 @@ Whenever the driver wants to make a motion he can change the direction of wheels
 
 Apart for controling we observe the magnitude of how much the joystick by mapping is given the arduino instruct the motor driver to how much power is to be give.
 
-# 
+# Programming
+
+**<ins>Initializing of Variables and Naming Pins</ins>**
+
+- At the starting we define different variables for pins and for dyanamic input vlaues
+- ch2 and ch3 are for channel 2 and channel 3 repsectively
+- a,b,c, and d are for IN1, IN2, IN3 and IN4 pins respectively
+
+  **<ins>Setup</ins>**
+  - In the setup we start with 
