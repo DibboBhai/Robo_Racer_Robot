@@ -56,4 +56,13 @@ The 2D design is created in Onshape and then we used Laser cutter to get precise
 
 In this project we are using Flysky FS-CT6B Transmitter. It is device used by Driver to control the Bot wirelessly. Transmitter takes input from user about what task to perform accordin to what the user has set up and the receiver recives the input given by user by Radiowaves sent by the transmitter. Then receiver decodes the waves and send the input values to the microprocessor then it takes decision of what output must be given according to te way it has been programmed. Every channels of receiver has a specific botton or joystick which it is connected to and every bottons and joystic independently send their signals. So  every channel receives different input. And with different inputs we can do multitasking and make the bot work.
 
+In our case we will use only 2 channels. One channels will help in controling the forward left and forward right wheel and other channel will help in controlling the forward right and backward wheel.
+
+- Left wheels (both backward and forward) control ---> channel 2
+- Right wheels (both backward and forward) control ---> channel 3
+
+|        |        |       |
+| ---- | ----| ---- |
+|![image](https://github.com/DibboBhai/Robo_Racer_Robot/assets/148962484/7474b158-252c-4d5a-ac55-f2d05743f883)| ![image](https://github.com/DibboBhai/Robo_Racer_Robot/assets/148962484/799f5dda-c8e9-4137-bd46-c04fa60250c4)| |
+
 
