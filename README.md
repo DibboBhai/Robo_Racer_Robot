@@ -25,6 +25,8 @@ The concept used for building the bot is that the receiver receives some values 
 - Johnson Motors ×4
 - Motor Wheels ×4
 - Hinge
+- Cooling Fans ×2
+- Zipties
 - Nut and Blots for attaching Wheels
 - Flysky FS-CT6B Transmitter
 - Receiver
@@ -32,13 +34,15 @@ The concept used for building the bot is that the receiver receives some values 
 
 # System Architecture
 
-At the very starting we have put the 2 front motors of the bots. Arduino is setup in the front for ease in uploading of code. Nearly at the centre the battery is placed. After battery the breadboard is placed and it interacts with every component of the system for ground and for 5 V power supply. After breadboard the receiver and the Motor Driver are placed sideways. At the very end we have placed our 2 back motors of the bot.
+At the very starting we have put the 2 front motors of the bots. Arduino is setup in the front for ease in uploading of code. Nearly at the centre the battery is placed. After battery the breadboard is placed and it interacts with every component of the system for ground and for 5 V power supply. After breadboard the receiver and the Motor Driver are placed sideways and beside motor drivers there are two fans to avoid overheating of Motor Drver. At the very end we have placed our 2 back motors of the bot.
 
 # Mechanical Design
 
 The 2D design is created in Onshape and then we used Laser cutter to get precise design in the Acrylic. We made the bot in shape of cuboid. The dimension of the cuboid was 170mm × 300mm × 70mm. At the top cover we put a hinge at the posterior part of the bot a small box cut at top for fitting switch. The design can be found in the link below.
 
 [The Link for the 2D design](https://cad.onshape.com/documents/d5d891ddd6445b480410c69e/w/940477b93a4f2d0b305ebcb4/e/ea15fd9b8ccd93f9f53267da)
+
+Use zipties to tie the motors and apply glue gun to make it stable. And all the electrical compononets must be stick to the base of the Acrylic steadily by double side tape. And then the hinge must be at the back of acrylic so that the top lid is openable anytime for circuit modifications.
 
 # Electrical Connections
 
@@ -101,3 +105,18 @@ Apart for controling we observe the magnitude of how much the joystick by mappin
 - So to counter the above problem we defined set of boundary condition such that if the value is above 254 then the value of channel's input is 254 only and if it is less than -254 then the input in channel is -254 only.
 - After this we setup the conditions for motions of directions like FORWARD,BACKWARD,RIGHT,LEFT and STABLE(Beacuse at experimentation we observed that the bot was not stable at that so we specified the condition at else statment).
 - At the very end we use Analog Write and absolute value of the ch2 and ch3 variables for controlling of the bot's speed which.
+
+# Testing and Calibration
+
+After testing the bot will be able to do all the motions easily. But one has to calibrate according to the Transmitter they are using because every transmitter has different input values and they vary very frequently so the transmitter and mapping must be calibrated accordingly.
+
+# Performance Evaluation
+
+- The bot works good in plane surface and is very easy to control and very responsive to user's command
+- After some time the Motor Driver Overheats too much
+- The Motor directions were not correct and motors were not firm in their position
+- The bot had difficulty in climbing slopes
+
+# Conclusion
+
+The project was mostly successful. In this project we learn how the receiver and transmitter works and how wireless transmission of Radiowaves occur. And we learnt about functions like mapping and pulseIn
