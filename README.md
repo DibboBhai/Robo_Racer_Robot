@@ -32,5 +32,13 @@ The concept used for building the bot is that the receiver receives some values 
 
 # System Architecture
 
+At the very starting we have put the 2 front motors of the bots. Arduino is setup in the front for ease in uploading of code. Nearly at the centre the battery is placed. After battery the breadboard is placed and it interacts with every component of the system for ground and for 5 V power supply. After breadboard the receiver and the Motor Driver are placed sideways. At the very end we have placed our 2 back motors of the bot.
+
+# Mechanical Design
+
+The 2D design is created in Onshape and then we used Laser cutter to get precise design in the Acrylic. We made the bot in shape of cuboid. The dimension of the cuboid was 170mm × 300mm × 70mm. At the top cover we put a hinge at the posterior part of the bot a small box cut at top for fitting switch. The design can be found in the link below.
+
+[The Link for the 2D design](https://cad.onshape.com/documents/d5d891ddd6445b480410c69e/w/940477b93a4f2d0b305ebcb4/e/ea15fd9b8ccd93f9f53267da)
+
 
 
