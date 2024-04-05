@@ -61,8 +61,19 @@ In our case we will use only 2 channels. One channels will help in controling th
 - Left wheels (both backward and forward) control ---> channel 2
 - Right wheels (both backward and forward) control ---> channel 3
 
-|        |        |       |
-| ---- | ----| ---- |
-|![image](https://github.com/DibboBhai/Robo_Racer_Robot/assets/148962484/7474b158-252c-4d5a-ac55-f2d05743f883)| ![image](https://github.com/DibboBhai/Robo_Racer_Robot/assets/148962484/799f5dda-c8e9-4137-bd46-c04fa60250c4)| |
+![image](https://github.com/DibboBhai/Robo_Racer_Robot/assets/148962484/7474b158-252c-4d5a-ac55-f2d05743f883) <img src="https://github.com/DibboBhai/Robo_Racer_Robot/assets/148962484/799f5dda-c8e9-4137-bd46-c04fa60250c4" height = 300 width = 300>  <img src ="https://github.com/DibboBhai/Robo_Racer_Robot/assets/148962484/75919350-2e63-4e4d-bec7-76d75963875f" height=300 width=300> 
 
+# Motor Driver Controlling
 
+Whenever the driver wants to make a motion he can change the direction of wheels by changing the voltage supply of IN pins and can change the speed by varying the voltage supply to EN pins.
+
+| FORWARD DIRECTION | BACKWARD DIRECTION | LEFT DIRECTION                            | RIGHT DIRECTION    |
+| ----------------- | ------------------ | ---------------------------------------   | ------------------ |
+| IN1 voltage HIGH  | IN1 voltage LOW    | IN1 voltage HIGH OR LOW (SAME AS IN2)     | IN1 voltage HIGH  |
+| IN2 voltage LOW   | IN2 voltage HIGH   | IN2 voltage HIGH OR LOW (SAME AS IN1)     | IN2 voltage LOW   |
+| IN3 voltage LOW   | IN3 voltage HIGH   | IN3 voltage LOW                           | IN3 voltage HIGH OR LOW (SAME AS IN4) |
+| IN4 voltage HIGH  | IN4 voltage LOW    | IN4 voltage HIGH                          | IN4 voltage HIGH OR LOW (SAME AS IN3) |
+
+Apart for controling we observe the magnitude of how much the joystick by mapping is given the arduino instruct the motor driver to how much power is to be give.
+
+# 
